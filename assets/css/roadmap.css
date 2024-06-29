@@ -1,0 +1,940 @@
+/*!
+ * Bootstrap v4.1.3 (https://getbootstrap.com/)
+ * Copyright 2011-2018 The Bootstrap Authors
+ * Copyright 2011-2018 Twitter, Inc.
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+ */
+ 
+@media (min-width: 576px) {
+    .container {
+        max-width:540px
+    }
+}
+
+@media (min-width: 768px) {
+    .container {
+        max-width:720px
+    }
+}
+
+@media (min-width: 992px) {
+    .container {
+        max-width:960px
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        max-width:1140px
+    }
+}
+
+.sectionwrapper {
+    margin: 60px 0;
+    position: relative
+}
+
+
+@media (max-width: 1000px)
+{#roadmap .grid-layout {
+    background-size: 820px;
+    background-position: 50% 36%;
+    grid-template-columns: 380px 490px;
+}}
+
+@media (max-width: 1070px)
+{#roadmap .grid-layout {
+    background-size: 900px;
+    background-position: 50% 41%;
+    grid-template-columns: 380px 550px;
+    column-gap: 0;
+    row-gap: 20px;
+}}
+@media (max-width: 1160px)
+{#roadmap .grid-layout {
+    background-size: 950px;
+    background-position: 50% 37%;
+    grid-template-columns: 400px 600px;
+}}
+@media (max-width: 1215px)
+{#roadmap .grid-layout {
+    background-size: 1060px;
+    background-position: 50% 40%;
+}}
+@media (max-width: 1300px)
+{#roadmap .grid-layout {
+    background-size: 1120px;
+}}
+#roadmap .grid-layout {
+    display: grid;
+    grid-template-areas:
+        "card1 road1"
+        "road2 card2"
+        "card5 road5"
+        "road6 card6";
+    grid-template-columns: repeat(2, 1fr);
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: 50% 30%;
+    row-gap: 50px;
+}
+
+.grid-layout {
+    background-image: url(../img/road.png);
+}
+
+@media (max-width: 768px)
+{.grid-layout {
+    background-image: url(../img/mobileRoad.png) !important;
+}}
+
+#roadmap {
+    position: relative
+}
+
+@media (max-width: 500px) {
+    #roadmap {
+        padding:0 0
+    }
+
+    #roadmap .container-fluid:not(:first-child) {
+        padding: 0 0
+    }
+}
+
+#roadmap .section-title {
+    margin-bottom: 30px
+}
+
+@media (max-width: 500px) {
+    #roadmap .section-title {
+        margin-bottom:73px
+    }
+}
+
+#roadmap .grid-layout {
+    display: grid;
+    grid-template-areas: "card1 road1" "road2  card2" "card3  road3" "road4  card4" "card5  road5" "road6  card6";
+    grid-template-columns: repeat(2, 1fr);
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: 50% 30%;
+    row-gap: 50px
+}
+
+@media (max-width: 1300px) {
+    #roadmap .grid-layout {
+        background-size:1120px
+    }
+}
+
+@media (max-width: 1215px) {
+    #roadmap .grid-layout {
+        background-size:1060px;
+        background-position: 50% 40%
+    }
+}
+
+@media (max-width: 1160px) {
+    #roadmap .grid-layout {
+        background-size:950px;
+        background-position: 50% 37%;
+        grid-template-columns: 400px 600px
+    }
+}
+
+@media (max-width: 1070px) {
+    #roadmap .grid-layout {
+        background-size:900px;
+        background-position: 50% 41%;
+        grid-template-columns: 380px 550px;
+        column-gap: 0;
+        row-gap: 20px
+    }
+}
+
+@media (max-width: 1000px) {
+    #roadmap .grid-layout {
+        background-size:820px;
+        background-position: 50% 36%;
+        grid-template-columns: 380px 490px
+    }
+}
+
+@media (max-width: 940px) {
+    #roadmap .grid-layout {
+        grid-template-columns:380px 380px
+    }
+}
+
+@media (max-width: 920px) {
+    #roadmap .grid-layout {
+        background-image:none;
+        grid-template-columns: 1fr;
+        row-gap: 50px
+    }
+}
+
+@media (max-width: 768px) {
+    #roadmap .grid-layout {
+        grid-template-areas:"card1" "card2" "card3" "card4" "card5" "card6";
+        grid-template-columns: repeat(1, 1fr);
+        background-size: 370px;
+        background-position: 50% 50%;
+        row-gap: 50px;
+        place-items: center
+    }
+}
+
+@media (max-width: 500px) {
+    #roadmap .grid-layout {
+        background-size:contain;
+        background-position: 50% 10%;
+        row-gap: 70px
+    }
+}
+
+#roadmap .grid-layout .single-map-block {
+    display: flex;
+    align-items: center;
+    border-radius: 20px;
+    max-width: 635px
+}
+
+@media (max-width: 768px) {
+    #roadmap .grid-layout .single-map-block {
+        max-width:259px;
+        text-align: center
+    }
+}
+
+#roadmap .grid-layout .single-map-block.card-1,#roadmap .grid-layout .single-map-block.card-3 {
+    background-image: linear-gradient(90deg, transparent 20%, white 30%)
+}
+
+@media (max-width: 1330px) {
+    #roadmap .grid-layout .single-map-block.card-1,#roadmap .grid-layout .single-map-block.card-3 {
+        width:150%
+    }
+}
+
+@media (max-width: 768px) {
+    #roadmap .grid-layout .single-map-block.card-1,#roadmap .grid-layout .single-map-block.card-3 {
+        width:100%;
+        flex-direction: column;
+        background-image: none;
+        background-color: #fff;
+        right: 80px;
+        position: relative
+    }
+}
+
+@media (max-width: 768px) and (max-width: 450px) {
+    #roadmap .grid-layout .single-map-block.card-1,#roadmap .grid-layout .single-map-block.card-3 {
+        right:20px
+    }
+}
+
+#roadmap .grid-layout .single-map-block.card-2,#roadmap .grid-layout .single-map-block.card-4 {
+    background-image: linear-gradient(90deg, white 70%, transparent 0%);
+    flex-direction: row-reverse
+}
+
+@media (max-width: 768px) {
+    #roadmap .grid-layout .single-map-block.card-2,#roadmap .grid-layout .single-map-block.card-4 {
+        width:100%;
+        flex-direction: column;
+        background-image: none;
+        background-color: #ffffff;
+        right: -80px;
+        position: relative
+    }
+}
+
+@media (max-width: 450px) {
+    #roadmap .grid-layout .single-map-block.card-2,#roadmap .grid-layout .single-map-block.card-4 {
+        right:-40px
+    }
+}
+
+#roadmap .grid-layout .single-map-block.card-2 .img-area .number,#roadmap .grid-layout .single-map-block.card-4 .img-area .number {
+    left: auto;
+    right: 20px;
+    top: -20px
+}
+
+@media (max-width: 450px) {
+    #roadmap .grid-layout .single-map-block.card-2 .img-area .number,#roadmap .grid-layout .single-map-block.card-4 .img-area .number {
+        right:60px;
+        top: -10px
+    }
+}
+
+#roadmap .grid-layout .single-map-block.card-1 {
+    grid-area: card1
+}
+
+@media (max-width: 1070px) {
+    #roadmap .grid-layout .single-map-block.card-1 .img-area img {
+        bottom:0
+    }
+}
+
+#roadmap .grid-layout .single-map-block.card-2 {
+    grid-area: card2
+}
+
+@media (max-width: 1000px) {
+    #roadmap .grid-layout .single-map-block.card-2 {
+        margin-left:-100px
+    }
+}
+
+@media (max-width: 940px) {
+    #roadmap .grid-layout .single-map-block.card-2 {
+        margin-left:-200px
+    }
+}
+
+@media (max-width: 920px) {
+    #roadmap .grid-layout .single-map-block.card-2 {
+        margin-left:-400px
+    }
+}
+
+@media (max-width: 768px) {
+    #roadmap .grid-layout .single-map-block.card-2 {
+        margin-left:unset
+    }
+}
+
+@media (max-width: 1070px) {
+    #roadmap .grid-layout .single-map-block.card-2 .img-area .number {
+        top:-40px
+    }
+}
+
+#roadmap .grid-layout .single-map-block.card-2 .img-area img {
+    bottom: -20px
+}
+
+@media (max-width: 768px) {
+    #roadmap .grid-layout .single-map-block.card-2 .img-area img {
+        bottom:-20px
+    }
+}
+
+#roadmap .grid-layout .single-map-block.card-3 {
+    grid-area: card3
+}
+
+#roadmap .grid-layout .single-map-block.card-3 .img-area .number {
+    top: -50px
+}
+
+@media (max-width: 768px) {
+    #roadmap .grid-layout .single-map-block.card-3 .img-area .number {
+        top:-10px
+    }
+}
+
+#roadmap .grid-layout .single-map-block.card-3 .img-area img {
+    bottom: -20px;
+    max-height: 360px
+}
+
+@media (max-width: 768px) {
+    #roadmap .grid-layout .single-map-block.card-3 .img-area img {
+        bottom:auto;
+        max-height: 240px;
+        top: -50px
+    }
+}
+
+#roadmap .grid-layout .single-map-block.card-4 {
+    grid-area: card4
+}
+
+@media (max-width: 1000px) {
+    #roadmap .grid-layout .single-map-block.card-4 {
+        margin-left:-100px
+    }
+}
+
+@media (max-width: 940px) {
+    #roadmap .grid-layout .single-map-block.card-4 {
+        margin-left:-200px
+    }
+}
+
+@media (max-width: 920px) {
+    #roadmap .grid-layout .single-map-block.card-4 {
+        margin-left:-400px
+    }
+}
+
+@media (max-width: 768px) {
+    #roadmap .grid-layout .single-map-block.card-4 {
+        margin-left:unset
+    }
+}
+
+@media (max-width: 500px) {
+    #roadmap .grid-layout .single-map-block.card-4 {
+        margin-bottom:-140px
+    }
+}
+
+@media (max-width: 920px) {
+    #roadmap .grid-layout .single-map-block.card-4 .img-area {
+        width:260px
+    }
+}
+
+@media (max-width: 1070px) {
+    #roadmap .grid-layout .single-map-block.card-4 .img-area img {
+        bottom:-10px
+    }
+}
+
+#roadmap .grid-layout .single-map-block.card-4 .content-area {
+    padding-left: 43px;
+    padding-right: 10px
+}
+
+@media (max-width: 768px) {
+    #roadmap .grid-layout .single-map-block.card-4 .content-area {
+        padding-left:20px;
+        padding-right: 20px
+    }
+}
+
+#roadmap .grid-layout .single-map-block.card-5 {
+    background-image: linear-gradient(90deg, transparent 20%, white 30%);
+}
+
+@media (max-width: 1330px) {
+    #roadmap .grid-layout .single-map-block.card-5 {
+        width: 150%;
+    }
+}
+
+@media (max-width: 768px) {
+    #roadmap .grid-layout .single-map-block.card-5 {
+        width: 100%;
+        flex-direction: column;
+        background-image: none;
+        background-color: #fff;
+        right: 80px;
+        position: relative;
+    }
+}
+
+@media (max-width: 768px) and (max-width: 450px) {
+    #roadmap .grid-layout .single-map-block.card-5 {
+        right: 20px;
+        margin-top: 150px;
+    }
+
+}
+
+#roadmap .grid-layout .single-map-block.card-6 {
+    background-image: linear-gradient(90deg, white 70%, transparent 0%);
+    flex-direction: row-reverse;
+}
+
+@media (max-width: 768px) {
+    #roadmap .grid-layout .single-map-block.card-6 {
+        width: 100%;
+        flex-direction: column;
+        background-image: none;
+        background-color: #ffffff;
+        right: -80px;
+        position: relative;
+    }
+}
+
+@media (max-width: 450px) {
+    #roadmap .grid-layout .single-map-block.card-6 {
+        right: -40px;
+    }
+}
+
+#roadmap .grid-layout .single-map-block.card-6 .img-area .number {
+    left: auto;
+    right: 20px;
+    top: -20px;
+}
+
+@media (max-width: 450px) {
+    #roadmap .grid-layout .single-map-block.card-6 .img-area .number {
+        right: 60px;
+        top: -10px;
+    }
+}
+
+#roadmap .grid-layout .single-map-block.card-5 {
+    grid-area: card5;
+}
+
+#roadmap .grid-layout .single-map-block.card-6 {
+    grid-area: card6;
+}
+
+#roadmap .grid-layout .single-map-block.card-5 .img-area .number {
+    top: -50px;
+}
+
+@media (max-width: 768px) {
+    #roadmap .grid-layout .single-map-block.card-5 .img-area .number {
+        top: -10px;
+    }
+}
+
+#roadmap .grid-layout .single-map-block.card-5 .img-area img {
+    bottom: -20px;
+    max-height: 360px;
+}
+
+@media (max-width: 768px) {
+    #roadmap .grid-layout .single-map-block.card-5 .img-area img {
+        bottom: auto;
+        max-height: 240px;
+        top: -50px;
+    }
+}
+
+#roadmap .grid-layout .single-map-block.card-6 .content-area {
+    padding-left: 43px;
+    padding-right: 10px;
+}
+
+@media (max-width: 768px) {
+    #roadmap .grid-layout .single-map-block.card-6 .content-area {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
+#roadmap .grid-layout .single-map-block .img-area {
+    position: relative;
+    height: 200px;
+    width: 300px
+}
+
+#roadmap .grid-layout .single-map-block .img-area .number {
+    position: absolute;
+    top: -10px;
+    left: 0;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: #000;
+    font-size: 50px;
+    font-weight: 900;
+    line-height: 50px;
+    color: #fff;
+    display: grid;
+    place-items: center;
+    z-index: 1
+}
+
+@media (max-width: 768px) {
+    #roadmap .grid-layout .single-map-block .img-area .number {
+        width:57px;
+        height: 57px;
+        font-size: 32px
+    }
+}
+
+@media (max-width: 450px) {
+    #roadmap .grid-layout .single-map-block .img-area .number {
+        left:40px
+    }
+}
+
+#roadmap .grid-layout .single-map-block .img-area img {
+    max-width: 100%;
+    max-height: 300px;
+    object-fit: contain;
+    height: auto;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: -30px;
+    display: block
+}
+
+@media (max-width: 768px) {
+    #roadmap .grid-layout .single-map-block .img-area img {
+        max-height:200px;
+        bottom: auto;
+        top: -20px
+    }
+}
+
+#roadmap .grid-layout .single-map-block .content-area {
+    padding: 20px 20px 20px 20px;
+    max-width: 335px
+}
+
+#roadmap .grid-layout .single-map-block .content-area h4 {
+    font-size: 26px;
+    line-height: 31px;
+    text-transform: initial
+}
+
+@media (max-width: 1160px) {
+    #roadmap .grid-layout .single-map-block .content-area h4 {
+        font-size:20px;
+        line-height: 20px
+    }
+}
+
+#roadmap .grid-layout .single-map-block .content-area p {
+    margin-bottom: 0px
+}
+
+@media (max-width: 1160px) {
+    #roadmap .grid-layout .single-map-block .content-area p {
+        font-size:14px
+    }
+}
+
+#roadmap .grid-layout .single-map-block .content-area .cta-type-link {
+    margin-top: 14px;
+    font-size: 21px;
+    display: flex;
+    column-gap: 5px;
+    font-weight: 700
+}
+
+@media (max-width: 768px) {
+    #roadmap .grid-layout .single-map-block .content-area .cta-type-link {
+        justify-content:center;
+        font-size: 15px
+    }
+}
+
+#roadmap .grid-layout .single-map-block .content-area .cta-type-link img {
+    width: 12px;
+    object-fit: contain
+}
+
+#roadmap .grid-layout .single-map-block .content-area .app-btns {
+    display: flex;
+    margin-top: 14px;
+    gap: 15px
+}
+
+#roadmap .grid-layout .single-map-block .content-area .app-btns a img {
+    width: 140px;
+    object-fit: contain
+}
+
+@media (max-width: 768px) {
+    #roadmap .grid-layout .single-map-block .content-area .app-btns a img {
+        width:110px
+    }
+}
+
+#roadmap .grid-layout .single-map-block .content-area .cta-type-btn {
+    background-color: #df2b2f;
+    font-family: "gothamhtf-bookregular";
+    color: #fff;
+    font-size: 17px;
+    font-weight: 700;
+    line-height: 17px;
+    text-transform: uppercase;
+    display: inline-block;
+    padding: 12px 26px;
+    border-radius: 10px
+}
+
+@media (max-width: 768px) {
+    #roadmap .grid-layout .single-map-block .content-area .cta-type-btn {
+        font-size:13px;
+        line-height: 13px
+    }
+}
+
+#roadmap .grid-layout .single-map-block .content-area .app-block {
+    margin-top: 14px;
+    max-width: 304px;
+    width: 100%;
+    max-height: 88px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 10px;
+    box-shadow: 0px 0px 9px 0px rgba(0,0,0,0.1);
+    border-radius: 12px;
+    margin-bottom: 11px;
+    padding: 7px 7px
+}
+
+@media (max-width: 1160px) {
+    #roadmap .grid-layout .single-map-block .content-area .app-block {
+        padding:3px 4px
+    }
+}
+
+#roadmap .grid-layout .single-map-block .content-area .app-block img {
+    width: auto;
+    height: 75px;
+    object-fit: contain;
+    border: 4px solid #df2b2f;
+    border-radius: 10px
+}
+
+@media (max-width: 1160px) {
+    #roadmap .grid-layout .single-map-block .content-area .app-block img {
+        height:60px
+    }
+}
+
+@media (max-width: 768px) {
+    #roadmap .grid-layout .single-map-block .content-area .app-block img {
+        height:55px
+    }
+}
+
+#roadmap .grid-layout .single-map-block .content-area .app-block p {
+    margin: 0 0;
+    font-weight: 900;
+    font-size: 15px;
+    line-height: 1;
+    color: #000;
+    text-transform: uppercase
+}
+
+@media (max-width: 1160px) {
+    #roadmap .grid-layout .single-map-block .content-area .app-block p {
+        font-size:13px
+    }
+}
+
+@media (max-width: 768px) {
+    #roadmap .grid-layout .single-map-block .content-area .app-block p {
+        font-size:12px;
+        text-align: left
+    }
+}
+
+#roadmap .grid-layout .road-area.road-1 {
+    grid-area: road1
+}
+
+@media (max-width: 1330px) {
+    #roadmap .grid-layout .road-area.road-1 {
+        width:0%
+    }
+}
+
+#roadmap .grid-layout .road-area.road-2 {
+    grid-area: road2
+}
+
+#roadmap .grid-layout .road-area.road-3 {
+    grid-area: road3
+}
+
+@media (max-width: 1330px) {
+    #roadmap .grid-layout .road-area.road-3 {
+        width:0%
+    }
+}
+
+#roadmap .grid-layout .road-area.road-4 {
+    grid-area: road4
+}
+
+#roadmap .grid-layout .road-area.road-5 {
+    grid-area: road5
+}
+
+@media (max-width: 1330px) {
+    #roadmap .grid-layout .road-area.road-5 {
+        width:0%
+    }
+}
+
+#roadmap .grid-layout .road-area.road-6 {
+    grid-area: road6
+}
+
+
+.road-brain-icon {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 30px 0 50px
+}
+
+@media (max-width: 767px) {
+    .road-brain-icon {
+        margin:15px 0
+    }
+}
+
+.road-brain-icon-item {
+    width: 30%;
+    padding-right: 15px
+}
+
+.road-brain-icon-item .iconimage {
+    margin-bottom: 16px
+}
+
+.bannerwrapper .road-brain-banner-row .bannerimagewrapper {
+    margin-left: 0
+}
+
+.road-brain-banner-row {
+    position: relative;
+    color: #f7f7f7;
+    padding-bottom: 25px
+}
+
+@media (min-width: 768px) {
+    .road-brain-banner-row {
+        display:-webkit-box;
+        display: -ms-flexbox;
+        display: flex
+    }
+
+    .road-brain-banner-row-image {
+        width: 50%
+    }
+
+    .road-brain-banner-row-content-group {
+        width: 50%;
+        padding-left: 1em
+    }
+}
+
+@media (max-width: 1024px) {
+    .road-brain-banner-row {
+        background-color:#2f2f2f;
+        padding: 20px;
+        margin-top: 23px
+    }
+}
+
+@media (min-width: 1025px) {
+    .road-brain-banner-row-image {
+        width:60%
+    }
+
+    .road-brain-banner-row-content-group {
+        width: 40%
+    }
+}
+
+@media (min-width: 1025px) {
+    .road-brain-banner-row-image {
+        padding:0
+    }
+}
+
+.road-brain-banner-row-image .redframe,.road-brain-banner-row-image .redframeright,.road-brain-banner-row-image .redframeleft {
+    height: 100%;
+    margin-top: 1.5em
+}
+
+@media (min-width: 1025px) {
+    .road-brain-banner-row:after {
+        position:absolute;
+        content: '';
+        width: 100%;
+        height: 100%;
+        bottom: 0;
+        right: 0;
+        background-color: #2f2f2f;
+        z-index: -1;
+        width: 80%;
+        height: 87%
+    }
+}
+
+@media (min-width: 1025px) {
+    .road-brain-banner-row h1 {
+        margin-top:130px
+    }
+}
+
+.road-brain-banner-row .bannerimage {
+    padding-right: 30px
+}
+
+@media (min-width: 1025px) {
+    .road-brain-banner-row .bannerimage {
+        margin-right:10px;
+        padding-bottom: 14px
+    }
+}
+
+@media (min-width: 1025px) {
+    .road-brain-banner-row-content {
+        padding-right:100px;
+        padding-left: 1em
+    }
+}
+
+.road-brain-banner-row .buttonwrapper {
+    float: none;
+    margin-bottom: 0
+}
+
+.road-brain-banner-row .textwatermark {
+    top: unset;
+    bottom: 0;
+    opacity: 0.03;
+    margin-bottom: -270px;
+    z-index: 0
+}
+
+@media (min-width: 768px) {
+    .road-brain-banner-text {
+        margin-top:50px
+    }
+}
+
+@media (min-width: 1025px) {
+    .road-brain-banner-text {
+        float:right;
+        width: 60%;
+        padding-right: 30px
+    }
+}
+
+.road-brain-footer-row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: flex-end;
+    -ms-flex-pack: flex-end;
+    justify-content: flex-end
+}
+
+.road-brain-footer-image {
+    z-index: 1;
+    padding-top: 2em
+}
+
+.road-brain-footer-image .redframeright {
+    margin-top: 0
+}
+
+.road-brain-footer .halfimage {
+    overflow: hidden
+}
+
+.road-brain-footer .buttonwrapper {
+    position: absolute;
+    bottom: 0;
+    margin-bottom: -20px;
+    margin-left: 1em
+}
+
+/*# sourceMappingURL=style.css.map */

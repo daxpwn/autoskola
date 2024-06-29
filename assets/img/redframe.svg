@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="583px" height="609px" viewBox="0 0 583 609" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 58 (84663) - https://sketch.com -->
+    <title>Frame</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="100%" y1="50%" x2="64.5604766%" y2="50%" id="linearGradient-1">
+            <stop stop-color="#DF2B2F" stop-opacity="0" offset="0%"></stop>
+            <stop stop-color="#DF2B2F" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="100%" y1="50%" x2="65.7100475%" y2="50%" id="linearGradient-2">
+            <stop stop-color="#E60003" stop-opacity="0" offset="0%"></stop>
+            <stop stop-color="#DF2B2F" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Key-pages-v1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Homepage-Desktop-(v2)" transform="translate(-1180.000000, -184.000000)">
+            <g id="Abobe-the-fold">
+                <g id="Image" transform="translate(896.000000, 184.000000)">
+                    <g id="Desktop/Frame-(Red)" transform="translate(575.000000, 304.000000) scale(-1, 1) translate(-575.000000, -304.000000) translate(284.000000, 0.000000)">
+                        <rect id="Rectangle" fill="url(#linearGradient-1)" x="0" y="0" width="582" height="24"></rect>
+                        <polygon id="Rectangle" fill="url(#linearGradient-2)" transform="translate(11.000000, 305.164114) rotate(90.000000) translate(-11.000000, -305.164114) " points="-293.164114 293.164114 315.164114 293.164114 315.164114 317.164114 -293.164114 317.164114"></polygon>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
